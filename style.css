@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('pexels-veeterzy-39811.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-wrapper {
+    background-color: rgba(255, 255, 255, 0.55);
+    border-radius: 15px;
+    padding: 3rem;
+    font-weight: 250;
+    width: 40%;
+    text-align: center;
+}
+
+.todo-wrapper h2 {
+    margin: 0;
+}
+
+.todo-wrapper p {
+    font-style: italic;
+    color: grey;
+    margin: 5px 0px;
+}
+
+.todo-wrapper ol {
+    margin-bottom: 40px;
+    padding-left: 0;
+}
+
+.todo-wrapper ol li {
+    margin: 5px 0;
+    padding: 3px;
+    transition: all 0.5s ease-out;
+    list-style: none;
+}
+
+.todo-wrapper ol li:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.todo-wrapper .completed {
+    text-decoration: line-through;
+    color: darkgray;
+}
+
+.todo-wrapper .pretty-button {
+    margin: 10px 2px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: #0093d5;
+    border: none;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+}
+
+.todo-wrapper .pretty-button:hover {
+    cursor: pointer;
+    opacity: 0.85;
+    font-weight: bold;
+}
+
+.todo-wrapper input {
+    padding: 8px 20px;
+    border-radius: 15px;
+    border: none;
+    flex: 0.5;
+}
+
+.todo-wrapper #add-button {
+    padding: 8px 20px;
+    margin: 0;
+}
+
+.todo-wrapper form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+#control-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.todo-wrapper #clear-completed-button {
+    background-color: blue;
+    padding: 8px 10px;
+}
+
+.todo-wrapper #empty-button {
+    background-color: red;
+    padding: 8px 10px;
+}
+
+.todo-wrapper #save-button {
+    background-color: green;
+    padding: 8px 10px;
+}
